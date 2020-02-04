@@ -129,3 +129,41 @@ let librosEnLista = librosJS.map(libro => {
 librosUL = '<ul>' + librosEnLista.join("") + '</ul>'
 
 console.log(librosUL)
+
+// *********************  ejercicio de muestra de FILTER
+
+const grades = [7, 1, 2, 9, 3]
+
+const gradesFiltradas = notas.filter(grade => {
+    return grade < 6
+})
+
+console.log(gradesFiltradas)
+
+// ------------------------  Ejercicio de muestra 2: FILTER
+
+var frases = [
+    'Ut vero.',
+    'Gubergren labore clita et duo accusam diam dolor. Ipsum nonumy et labore kasd lorem takimata ea sed dolor. Kasd no.',
+    'Diam rebum nonumy et.',
+    'Kasd stet.',
+    'Sit et dolor.',
+    'Est diam justo gubergren dolores et vero.',
+    'Et sanctus sanctus et dolor clita.',
+    'Dolores.',
+    'Diam sea takimata voluptua ipsum labore voluptua kasd. At consetetur dolore diam.'
+  ];
+
+const frasesFiltradas = frases.filter(frase => frase.length < 20 || frase.length > 10);
+
+const frasesFiltradas = [];
+
+for (let i = 0; i < frases.length; i++) {
+    if (frases[i].length < 20) {
+        frasesFiltradas.push(frases[i])
+    }
+}
+
+console.log(frasesFiltradas)
+
+// ------------------------  Ejercicio 1: FILTER

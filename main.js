@@ -126,6 +126,6 @@ let librosEnLista = librosJS.map(libro => {
     return lista = '<li>' + libro + '</li>';
 })
 
-librosUL = '<ul>' + librosEnLista + '</ul>'
+librosUL = '<ul>' + librosEnLista.join("") + '</ul>'
 
 console.log(librosUL)
